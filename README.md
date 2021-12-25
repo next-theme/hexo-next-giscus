@@ -28,4 +28,8 @@ giscus:
   reactions_enabled: 1
   # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
   theme: light
+  # Available values: en | zh-C
+  lang: en
+  # Available value: anonymous
+  crossorigin: anonymous
 ```

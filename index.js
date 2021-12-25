@@ -7,15 +7,15 @@ const utils = new Util(hexo, __dirname);
 
 hexo.extend.filter.register('theme_inject', injects => {
 
-    let config = utils.defaultConfigFile('giscus', 'default.yaml');
-    if (!config.enable) return;
+  let config = utils.defaultConfigFile('giscus', 'default.yaml');
+  if (!config.enable) return;
 
-    if (!config.repo) {
-        hexo.log.warn(`giscus.repo can't be null.`);
-        return;
-    }
+  if (!config.repo) {
+      hexo.log.warn(`giscus.repo can't be null.`);
+      return;
+  }
 
-    injects.comment.raw('giscus', `
+  injects.comment.raw('giscus', `
   {% if page.comments %}
   <div class="comments">
     <script src="https://giscus.app/client.js"
@@ -25,14 +25,16 @@ hexo.extend.filter.register('theme_inject', injects => {
         data-category-id="${config.category_id}"
         data-mapping="${config.mapping}" 
         data-reactions-enabled="${config.reactions_enabled}" 
-        data-theme="${config.theme}" 
-        crossorigin="anonymous"
+        data-emit-metadata="${config.emit_metadata}" 
+        data-theme="${config.theme}"
+        data-lang="${config.lang}"
+        crossorigin="${config.crossorigin}"
         async>
     </script>
-    </div>
-   {% endif %}
+  </div>
+  {% endif %}
   `);
 
-    injects.style.push(utils.getFilePath('giscus.styl'));
+  injects.style.push(utils.getFilePath('giscus.styl'));
 
 }, (hexo.config.giscus || {}).priority);
