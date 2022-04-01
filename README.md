@@ -34,4 +34,8 @@ giscus:
   lang: en
   # Available value: anonymous
   crossorigin: anonymous
+  # Place the comment box above the comments
+  input_position: bottom
+  # Load the comments lazily
+  loading:
 ```

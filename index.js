@@ -29,6 +29,8 @@ hexo.extend.filter.register('theme_inject', injects => {
         data-theme="${config.theme}"
         data-lang="${config.lang}"
         crossorigin="${config.crossorigin}"
+        data-input-position="${config.input_position}"
+        data-loading="${config.loading}"
         async>
     </script>
   </div>
