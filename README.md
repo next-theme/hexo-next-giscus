@@ -37,5 +37,5 @@ giscus:
   # Place the comment box above the comments
   input_position: bottom
   # Load the comments lazily
-  loading:
+  loading: lazy
 ```
