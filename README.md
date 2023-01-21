@@ -24,16 +24,14 @@ giscus:
   category_id: # Github discussion category id
   # Available values: pathname | url | title | og:title
   mapping: pathname
-  # Available values: 0 | 1 
+  # Available values: 0 | 1
   reactions_enabled: 1
-   # Available values: 0 | 1 
+   # Available values: 0 | 1
   emit_metadata: 1
   # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
   theme: light
-  # Available values: en | zh-C
+  # Available values: en | zh-CN
   lang: en
-  # Available value: anonymous
-  crossorigin: anonymous
   # Place the comment box above the comments
   input_position: bottom
   # Load the comments lazily
