@@ -9,7 +9,7 @@
 ## Install
 
 ```bash
-$ npm install hexo-next-giscus --save
+$ npm install hexo-next-giscus
 ```
 
 ## Configure
