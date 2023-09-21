@@ -1,6 +1,6 @@
 {
     "name": "hexo-next-giscus",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Giscus comment system for NexT.",
     "main": "index.js",
     "scripts": {
