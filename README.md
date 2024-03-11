@@ -28,7 +28,7 @@ giscus:
   reactions_enabled: 1
    # Available values: 0 | 1
   emit_metadata: 1
-  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
+  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred_color_scheme
   theme: light
   # Available values: en | zh-CN
   lang: en
