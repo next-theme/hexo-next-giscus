@@ -11,7 +11,7 @@ giscus:
   reactions_enabled: 1
    # Available values: 0 | 1 
   emit_metadata: 1
-  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred_color_scheme
+  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred_color_scheme | light | light_high_contrast | light_protanopia | light_tritanopia | dark | dark_high_contrast | dark_protanopia | dark_tritanopia | dark_dimmed | preferred_color_scheme | transparent_dark | noborder_light | noborder_dark | noborder_gray | cobalt | purple_dark
   theme: light
   # Available values: en | zh-C
   lang: en
